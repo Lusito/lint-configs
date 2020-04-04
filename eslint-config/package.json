@@ -1,6 +1,6 @@
 {
   "name": "@lusito/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "eslint-config for my personal projects",
   "main": "index.js",
   "scripts": {},
