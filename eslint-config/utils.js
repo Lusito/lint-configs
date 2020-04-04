@@ -79,7 +79,7 @@ module.exports = {
                 "@typescript-eslint/no-parameter-properties": "error",
                 // "@typescript-eslint/no-unnecessary-condition": "error",
                 "@typescript-eslint/prefer-as-const": "error",
-                "@typescript-eslint/no-unused-vars": "error",
+                "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
                 "@typescript-eslint/prefer-for-of": "error",
                 "@typescript-eslint/prefer-includes": "error",
                 "@typescript-eslint/prefer-nullish-coalescing": "error",
@@ -88,7 +88,7 @@ module.exports = {
                 "@typescript-eslint/restrict-template-expressions": "off",
                 "@typescript-eslint/no-use-before-define": [
                     "error",
-                    { functions: false, typedefs: false }
+                    { functions: false, typedefs: false, classes: false }
                 ],
                 // Import
                 "import/order": [
@@ -104,7 +104,17 @@ module.exports = {
                 "import/prefer-default-export": "off",
                 "import/extensions": ["error", { ts: "never", tsx: "never" }],
                 ...(react ? getReactRules() : {})
-            }
+            },
+            overrides: [
+                {
+                    files: ["*.spec.{ts,tsx}"],
+                    rules: {
+                        "@typescript-eslint/no-non-null-assertion": "off",
+                        "@typescript-eslint/no-empty-function": "off",
+                        "@typescript-eslint/no-parameter-properties": "off",
+                    }
+                }
+            ]
         };
     }
 };
