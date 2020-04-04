@@ -1,31 +1,27 @@
-function getExtends(react) {
-        return [
-            react ? "airbnb" : "airbnb-base",
-            "plugin:@typescript-eslint/recommended",
-            "plugin:import/errors",
-            "plugin:import/warnings",
-            "plugin:import/typescript",
-            "prettier",
-            "prettier/@typescript-eslint",
-            "prettier/babel",
-            ...(react ? ["prettier/react"] : []),
-            "prettier/standard"
-        ];
-}
+const getExtends = (react) => [
+    react ? "airbnb" : "airbnb-base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/babel",
+    ...(react ? ["prettier/react"] : []),
+    "prettier/standard"
+];
 
-function getReactRules() {
-    return {
-        "react/jsx-filename-extension": [1, { extensions: [".tsx"] }],
-        "react/destructuring-assignment": "off",
-        "react/jsx-props-no-spreading": "off",
-        "react/no-unescaped-entities": "off",
-        "react/no-array-index-key": "off",
-        "react/button-has-type": "off",
-        "react-hooks/rules-of-hooks": "error",
-        "react/sort-comp": "off",
-        "react/no-danger": "off"
-    };
-}
+const getReactRules = () => ({
+    "react/jsx-filename-extension": [1, { extensions: [".tsx"] }],
+    "react/destructuring-assignment": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unescaped-entities": "off",
+    "react/no-array-index-key": "off",
+    "react/button-has-type": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react/sort-comp": "off",
+    "react/no-danger": "off"
+});
 
 module.exports = {
     getA11yOffRules() {
