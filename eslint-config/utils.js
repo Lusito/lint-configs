@@ -39,7 +39,7 @@ module.exports = {
                 tsconfigRootDir: "."
             },
             extends: getExtends(react),
-            plugins: ["import", "@typescript-eslint", ...(react ? ["react-hooks"] : [])],
+            plugins: ["import", "@typescript-eslint", "jest", ...(react ? ["react-hooks"] : [])],
             rules: {
                 // Standard
                 radix: "off",
