@@ -4,6 +4,7 @@ const getExtends = (react) => [
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
+    "plugin:jest/recommended",
     "prettier",
     "prettier/@typescript-eslint",
     "prettier/babel",
@@ -110,7 +111,10 @@ module.exports = {
                         "@typescript-eslint/no-parameter-properties": "off",
                     }
                 }
-            ]
+            ],
+            env: {
+                "jest/globals": true,
+            }
         };
     }
 };
