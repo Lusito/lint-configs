@@ -52,6 +52,7 @@ module.exports = {
                 "class-methods-use-this": "off",
                 "no-continue": "off",
                 // Rules handled by typescript
+                "no-use-before-define": "off",
                 "no-unused-expressions": "off",
                 "@typescript-eslint/no-unused-expressions": [
                     "error",
@@ -71,7 +72,23 @@ module.exports = {
                 "@typescript-eslint/type-annotation-spacing": "error",
                 "@typescript-eslint/array-type": ["error", { default: "array-simple" }],
                 "@typescript-eslint/default-param-last": "error",
-                "@typescript-eslint/generic-type-naming": "error",
+                "@typescript-eslint/explicit-module-boundary-types": "off",
+                "@typescript-eslint/naming-convention": [
+                    "error",
+                    {
+                        selector: "typeParameter",
+                        format: ["PascalCase"],
+                        prefix: ["T"],
+                        leadingUnderscore: "forbid",
+                        trailingUnderscore: "forbid",
+                    },
+                    {
+                        selector: "enumMember",
+                        format: ["UPPER_CASE"],
+                        leadingUnderscore: "forbid",
+                        trailingUnderscore: "forbid",
+                    },
+                ],
                 "@typescript-eslint/no-misused-promises": "error",
                 "@typescript-eslint/no-parameter-properties": "error",
                 // "@typescript-eslint/no-unnecessary-condition": "error",
