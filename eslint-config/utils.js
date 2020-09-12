@@ -51,6 +51,7 @@ module.exports = {
                 "class-methods-use-this": "off",
                 "no-continue": "off",
                 // Rules handled by typescript
+                "no-shadow": "off",
                 "no-use-before-define": "off",
                 "no-unused-expressions": "off",
                 "@typescript-eslint/no-unused-expressions": [
@@ -62,6 +63,7 @@ module.exports = {
                 camelcase: "off",
                 "@typescript-eslint/camelcase": ["off"],
                 // TypeScript
+                "@typescript-eslint/no-shadow": "error",
                 "@typescript-eslint/consistent-type-assertions": [
                     "warn",
                     { assertionStyle: "as", objectLiteralTypeAssertions: "allow" }
