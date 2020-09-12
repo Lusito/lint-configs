@@ -4,7 +4,6 @@ const getExtends = (react) => [
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "plugin:jest/recommended",
     "prettier",
     "prettier/@typescript-eslint",
     "prettier/babel",
@@ -39,7 +38,7 @@ module.exports = {
                 tsconfigRootDir: "."
             },
             extends: getExtends(react),
-            plugins: ["import", "@typescript-eslint", "jest", ...(react ? ["react-hooks"] : [])],
+            plugins: ["import", "@typescript-eslint", ...(react ? ["react-hooks"] : [])],
             rules: {
                 // Standard
                 radix: "off",
@@ -128,10 +127,7 @@ module.exports = {
                         "@typescript-eslint/no-parameter-properties": "off",
                     }
                 }
-            ],
-            env: {
-                "jest/globals": true,
-            }
+            ]
         };
     }
 };
