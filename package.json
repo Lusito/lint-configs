@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/eslint-config",
+    "packages/eslint-config-react",
+    "packages/prettier-config",
+    "packages/stylelint-config"
+  ],
+  "scripts": {
+    "lint:fix": "sort-package-json package.json 'packages/*/package.json'",
+    "release": "lerna publish"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "sort-package-json": "^1.48.1"
+  }
+}
