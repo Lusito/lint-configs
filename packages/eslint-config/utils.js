@@ -4,11 +4,7 @@ const getExtends = (react) => [
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/babel",
-    ...(react ? ["prettier/react"] : []),
-    "prettier/standard"
+    "prettier"
 ];
 
 const getReactRules = () => ({
