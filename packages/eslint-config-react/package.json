@@ -1,13 +1,13 @@
 {
   "name": "@lusito/eslint-config-react",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "eslint-config for my personal react projects",
   "license": "Zlib",
   "author": "Santo Pfingsten",
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "@lusito/eslint-config": "^1.6.0",
+    "@lusito/eslint-config": "^1.6.1",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
