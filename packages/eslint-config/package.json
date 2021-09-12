@@ -1,6 +1,6 @@
 {
   "name": "@lusito/eslint-config",
-  "version": "1.6.1",
+  "version": "1.7.0",
   "description": "eslint-config for my personal projects",
   "license": "Zlib",
   "author": "Santo Pfingsten",
