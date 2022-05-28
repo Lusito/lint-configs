@@ -1,6 +1,6 @@
 {
   "name": "@lusito/stylelint-config",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "stylelint-config for my personal projects",
   "license": "Zlib",
   "author": "Santo Pfingsten",
