@@ -16,6 +16,8 @@ const getReactRules = () => ({
     "react/button-has-type": "off",
     "react-hooks/rules-of-hooks": "error",
     "react/sort-comp": "off",
+    "react/require-default-props": "off",
+    "react/function-component-definition": "off",
     "react/no-danger": "off"
 });
 
