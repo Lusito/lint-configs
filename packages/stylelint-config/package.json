@@ -7,8 +7,8 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "stylelint": "^13.13.1",
-    "stylelint-config-prettier": "^8.0.2"
+    "stylelint": "^14.8.5",
+    "stylelint-config-prettier": "^9.0.3"
   },
   "publishConfig": {
     "access": "public"
