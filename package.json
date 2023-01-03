@@ -11,7 +11,7 @@
     "release": "lerna publish"
   },
   "devDependencies": {
-    "lerna": "^5.0.0",
-    "sort-package-json": "^1.57.0"
+    "lerna": "^6.3.0",
+    "sort-package-json": "^2.1.0"
   }
 }
