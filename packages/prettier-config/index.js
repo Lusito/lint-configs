@@ -5,7 +5,7 @@ module.exports = {
     endOfLine: "auto",
     overrides: [
         {
-            files: ["*.json", ".*rc"],
+            files: ["*.json", ".*rc", "*.md"],
             options: {
                 tabWidth: 2
             }
